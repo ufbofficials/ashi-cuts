@@ -64,6 +64,25 @@ body{
   z-index:1000;
   background:var(--nav-bg);
   backdrop-filter:blur(12px);
+  transition:all 0.3s ease;
+}
+
+.navbar.scrolled{
+  backdrop-filter:blur(24px);
+}
+
+.navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:22px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+  background:var(--nav-bg);
+  backdrop-filter:blur(12px);
 }
 
 .logo{
