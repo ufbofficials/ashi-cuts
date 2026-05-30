@@ -176,14 +176,25 @@ section{
 
 .slider{
   display:flex;
-  width:600%;
-  animation:slide 18s infinite;
+  width:max-content;
+  animation:smoothSlide 20s linear infinite;
 }
 
 .slider img{
-  width:100%;
+  width:350px;
   height:500px;
   object-fit:cover;
+  flex-shrink:0;
+}
+
+@keyframes smoothSlide{
+  from{
+    transform:translateX(0);
+  }
+
+  to{
+    transform:translateX(-50%);
+  }
 }
 
 /* ANIMATION */
