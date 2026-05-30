@@ -3,30 +3,27 @@
 /* ========================= */
 
 const menuBtn = document.getElementById('menuBtn');
-
 const navLinks = document.getElementById('navLinks');
 
 menuBtn.addEventListener('click', () => {
-
   navLinks.classList.toggle('active');
-
 });
 
 /* ========================= */
-/* NAVBAR SCROLL EFFECT */
+/* APPLE-STYLE NAVBAR SCROLL */
 /* ========================= */
+
+const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
 
-  const navbar = document.querySelector('.navbar');
-
   if(window.scrollY > 50){
 
-    navbar.style.background = 'rgba(0,0,0,0.95)';
+    navbar.classList.add('scrolled');
 
   }else{
 
-    navbar.style.background = 'rgba(0,0,0,0.7)';
+    navbar.classList.remove('scrolled');
 
   }
 
